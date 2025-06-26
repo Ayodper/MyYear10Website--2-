@@ -16,7 +16,7 @@ html {
     height: 100%;
     font-family: "Oswald", sans-serif;
     box-sizing: border-box;
-    background-color: #410202; /*  */
+    background-color: #b3dbce; /*  */
 }
 }
 
@@ -48,10 +48,10 @@ img {
 
 /* nice big font on a banner style background */
 .topic-title{
-    color: rgb(182, 15, 15);
+    color: rgb(90, 137, 133);
     font-size: 2em;
     padding: 0.1em 3em;
-    background-color: rgb(5, 177, 162);
+    background-color: rgb(49, 50, 50);
     text-align: center;
 }
 
