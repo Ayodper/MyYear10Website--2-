@@ -1,129 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head><style>
-   
-@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Oswald:wght@200..700&display=swap');
-
-    </style>
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayod's Digitech Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <title>Ayod's digitech portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Akronim&family=Oswald:wght@200..700&display=swap');
+
+        body {
+            font-family: 'Oswald', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .hero {
+            background-color: #222;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .nav-links {
+            margin-top: 1rem;
+        }
+
+        .nav-links a {
+            margin: 0 1rem;
+            color: #00bcd4;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .topic {
+            padding: 2rem;
+        }
+
+        .topic-title h1 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .topic-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .topic-card {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            width: 30%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .topic-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .topic-card-text {
+            margin-top: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: #0077cc;
+        }
+
+        .footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
-<!-- This is the main body of the website- ALL your content goes AFTER the <body> tag and before the </body> tag -->
 <body>
 
-    <!-- The Hero Section -------------------------------------------------------------------------------------- -->
+    <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-text"></div>
+        <h1>Welcome to Ayod's Digital Technologies Portfolio</h1>
+        <div class="nav-links">
+            <a href="#image-editing">Image Editing</a>
+            <a href="#coding">Coding & Python</a>
+            <a href="#blender">Blender Animation</a>
+            <a href="#fusion">Fusion Modelling</a>
+        </div>
     </section>
 
-<!-- Topic one ------------------------------------------------------------------------------------------------- -->
-    <!-- The First Topic Section -->
-    <section class="topic">
-        <!-- the topic title a big bar with text in it -->
-        <div class="topic-title">
-            <h1><em><strong>Image Editing</strong></em></h1>
-        </div>
-        <!-- now a three column grid of images -->
+    <!-- Image Editing Section -->
+    <section class="topic" id="image-editing">
+        <div class="topic-title"><h1><strong>Image Editing</strong></h1></div>
         <div class="topic-content">
-            <!-- one "card" which includes an image with a text below it -->
             <div class="topic-card">
-                <img src="images/Fighterjet.png" alt="change this too!">
+                <img src="images/Fighterjet.png" alt="Ai art styles">
                 <h2 class="topic-card-text">Ai art styles</h2>
             </div>
             <div class="topic-card">
-                <img src="images/bitmaplandscape.png" alt="change this too!">
+                <img src="images/bitmaplandscape.png" alt="Bezier tool art">
                 <h2 class="topic-card-text">Bezier tool art</h2>
             </div>
             <div class="topic-card">
-                <img src="images/eaglewolf.png" alt="change this too!">
+                <img src="images/eaglewolf.png" alt="Ai combination of animals">
                 <h2 class="topic-card-text">Ai combination of animals</h2>
-
-                </div>
             </div>
         </div>
+        <nav><a href="#coding">Next →</a></nav>
     </section>
-<!-- End of topic one------------------------------------------------------------------------------------------ -->
 
-<!-- Copy and paste the section from above to make your next section -->
-<!-- New Topic Section -->
-<section class="topic">
-    <div class="topic-title">
-        <h1><em><strong>Coding and Python</strong></em></h1>
-    </div>
-    <div class="topic-content">
-        <!-- New row of images -->
-        <div class="topic-card">
-            <img src="images/image.png" alt="Grok progress">
-            <h2 class="topic-card-text">Grok Progress</h2>
+    <!-- Coding Section -->
+    <section class="topic" id="coding">
+        <div class="topic-title"><h1><strong>Coding and Python</strong></h1></div>
+        <div class="topic-content">
+            <div class="topic-card">
+                <img src="images/image.png" alt="Grok progress">
+                <h2 class="topic-card-text">Grok Progress</h2>
+            </div>
+            <div class="topic-card">
+                <img src="images/Capturegrokcode.PNG" alt="Cool code">
+                <h2 class="topic-card-text">A cool piece of code</h2>
+            </div>
+            <div class="topic-card">
+                <img src="images/Animationflowercodegrok.gif" alt="Code in action">
+                <h2 class="topic-card-text">Some code in action!!</h2>
+            </div>
         </div>
-        <div class="topic-card">
-            <img src="images/Capturegrokcode.PNG" alt="A cool piece of code">
-            <h2 class="topic-card-text">A cool piece of code</h2>
-        </div>
-        <div class="topic-card">
-            <img src="images/Animationflowercodegrok.gif" alt="Description of image 3">
-            <h2 class="topic-card-text">Some code in action!!</h2>
-        </div>
-    </div>
-</section>
+        <nav><a href="#image-editing">← Previous</a> | <a href="#blender">Next →</a></nav>
+    </section>
 
+    <!-- Blender Section -->
+    <section class="topic" id="blender">
+        <div class="topic-title"><h1><strong>Blender Animation</strong></h1></div>
+        <div class="topic-content">
+            <div class="topic-card">
+                <img src="images/Animationgreenstone19.06.25.gif" alt="Greenstone animation">
+                <h2 class="topic-card-text">Greenstone animation in Blender</h2>
+            </div>
+            <div class="topic-card">
+                <img src="images/Animationmixamoanimation19.06.25.gif" alt="Blender animation">
+                <h2 class="topic-card-text">A Blender animation</h2>
+            </div>
+            <div class="topic-card">
+                <img src="images/Animationmixamofaildodgepunch19.06.25.gif" alt="Mixamo animation">
+                <h2 class="topic-card-text">Blender animation with Mixamo</h2>
+            </div>
+        </div>
+        <nav><a href="#coding">← Previous</a> | <a href="#fusion">Next →</a></nav>
+    </section>
 
-<!-- Copy and paste the section from above to make your next section -->
-<!-- New Topic Section -->
-<section class="topic">
-    <div class="topic-title">
-        <h1><em><strong>Animation and Modelling in Blender</strong></em></h1>
-    </div>
-    <div class="topic-content">
-        <!-- New row of images -->
-        <div class="topic-card">
-            <img src="images/Animationgreenstone19.06.25.gif" alt="Grok progress">
-            <h2 class="topic-card-text">Greenstone animation in Blender</h2>
+    <!-- Fusion Section -->
+    <section class="topic" id="fusion">
+        <div class="topic-title"><h1><strong>Fusion Modelling</strong></h1></div>
+        <div class="topic-content">
+            <div class="topic-card">
+                <img src="images/duckcutterfusion.PNG" alt="Duck Cutter">
+                <h2 class="topic-card-text">Fusion Duck Cookie Cutter</h2>
+            </div>
+            <div class="topic-card">
+                <img src="images/roomfusion.PNG" alt="Fusion Room">
+                <h2 class="topic-card-text">Fusion Room</h2>
+            </div>
+            <div class="topic-card">
+                <img src="images/Capturedogecoin.PNG" alt="Fusion Coin">
+                <h2 class="topic-card-text">Fusion Coin By Ayod Perera</h2>
+            </div>
         </div>
-        <div class="topic-card">
-            <img src="images/Animationmixamoanimation19.06.25.gif" alt="A cool piece of code">
-            <h2 class="topic-card-text">A Blender animation</h2>
-        </div>
-        <div class="topic-card">
-            <img src="images/Animationmixamofaildodgepunch19.06.25.gif" alt="Description of image 3">
-            <h2 class="topic-card-text">Blender animaton with mixamo and my own animations</h2>
-        </div>
-    </div>
-</section>
+        <nav><a href="#blender">← Previous</a> | <a href="#image-editing">↑ Top</a></nav>
+    </section>
 
-
-<!-- Copy and paste the section from above to make your next section -->
-<!-- New Topic Section -->
-<section class="topic">
-    <div class="topic-title">
-        <h1><em><strong>Animation and Modelling in Blender</strong></em></h1>
-    </div>
-    <div class="topic-content">
-        <!-- New row of images -->
-        <div class="topic-card">
-            <img src="images/duckcutterfusion.PNG" alt="Grok progress">
-            <h2 class="topic-card-text">Fusion Duck Cookie Cutter</h2>
-        </div>
-        <div class="topic-card">
-            <img src="images/roomfusion.PNG" alt="A cool piece of code">
-            <h2 class="topic-card-text">Fusion Room</h2>
-        </div>
-        <div class="topic-card">
-            <img src="images/Capturedogecoin.PNG" alt="Description of image 3">
-            <h2 class="topic-card-text">Fusion Coin By Ayod Perera</h2>
-        </div>
-    </div>
-</section>
-
-
-    <!-- A Simple Website Footer ------------------------------------------------------------------------------ -->
+    <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2025 Digital Technologies showcase Website By Ayod Perera</p>
+        <p>&copy; 2025 Digital Technologies Showcase Website By Ayod Perera</p>
     </footer>
 
-<!-- The end of the whole page- no more content after this! -->
 </body>
 </html>
