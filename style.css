@@ -1,31 +1,20 @@
-/* A simple css reset */
+/* A simple CSS reset */
 body,
 html {
     margin: 0;
     padding: 0;
     height: 100%;
-    /* The Font Family- Really important!! */
     font-family: "Oswald", sans-serif;
     box-sizing: border-box;
-
-
-    body,
-html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: "Oswald", sans-serif;
-    box-sizing: border-box;
-    background-color: #b3dbce; /*  */
-}
+    background-color: #b3dbce;
 }
 
-/* reset for images to ensure they ar 100% of the parent container width */
+/* Reset for images to ensure they are 100% of the parent container width */
 img {
     width: 100%;
 }
 
-/* The hero section styling- use your OWN Hero Image URL here */
+/* The hero section styling — use your OWN Hero Image URL here */
 .hero {
     background-image: url('images/banner.png');
     height: 25vh;
@@ -46,8 +35,8 @@ img {
     text-align: center;
 }
 
-/* nice big font on a banner style background */
-.topic-title{
+/* Nice big font on a banner-style background */
+.topic-title {
     color: rgb(90, 137, 133);
     font-size: 2em;
     padding: 0.1em 3em;
@@ -55,19 +44,17 @@ img {
     text-align: center;
 }
 
-/* Three column grid with a nice big gap */
-.topic-content{
+/* Three-column grid with a nice big gap */
+.topic-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 6em;
-    /* bring the whole section in off the sides of the page */
     width: 70%;
-    /* top margin of 3em and center right/left */
     margin: 3em auto;
 }
 
-/* Styling for the individual topic cards rounded edges background color and a drop shadow */
-.topic-card{
+/* Styling for the individual topic cards: rounded edges, background color, and drop shadow */
+.topic-card {
     background-color: rgb(71, 71, 71);
     color: rgb(0, 227, 243);
     padding: 1em;
@@ -76,20 +63,17 @@ img {
 }
 
 /* Styling for the topic card titles */
-.topic-card-text{
+.topic-card-text {
     font-size: 1.5em;
     margin-bottom: 0.5em;
-    /* center align text */
     text-align: center;
-    color:darkcyan
+    color: darkcyan;
 }
 
-
-/* Styling for a footer section to take a bit of spcae at the bottom of the page */
-.footer{
+/* Styling for a footer section to take a bit of space at the bottom of the page */
+.footer {
     background-color: rgb(71, 71, 71);
     color: rgb(3, 201, 191);
-    text-align: right;
-    padding: 3em 3em;
     text-align: center;
+    padding: 3em 3em;
 }
